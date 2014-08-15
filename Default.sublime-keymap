@@ -1,0 +1,6 @@
+[
+  {
+    "keys": ["shift+command+x"],
+    "command": "sub_slack"
+  }
+]
