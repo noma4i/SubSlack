@@ -23,7 +23,7 @@ SublimeText Plugin to send selected text to Slack Chat.
 
 ```
   {
-    "keys": ["shift+command+x"],
+    "keys": ["command+k","command+s"],    
     "command": ""
   }
 ```
