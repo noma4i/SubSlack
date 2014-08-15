@@ -21,8 +21,10 @@ class Slackchat:
 
 class SubSlackCommand(sublime_plugin.TextCommand):
   def run(self, edit):
+    def send_to_chat(text):
+      chat = Slackchat()
+      chat.post(text)
     for region in self.view.sel():
       if not region.empty():
         selection = self.view.substr(region)
-        chat = Slackchat()
-        chat.post(selection)
+        sublime.set_timeout_async(send_to_chat(selection),0)
