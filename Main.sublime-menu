@@ -21,6 +21,13 @@
                                     "file": "${packages}/SubSlack/SubSlack.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/SubSlack/Default.sublime-keymap"
+                                },
+                                "caption": "Key Bindings – Default"
                             }
                         ]
                     }
