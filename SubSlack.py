@@ -10,15 +10,19 @@ from pyslack import SlackClient
 class Slackchat:
   def __init__(self):
     settings = sublime.load_settings("SubSlack.sublime-settings")
-    token  = settings.get('token')
+    token = settings.get('token')
+    self.bot = settings.get('bot_name')
     self.room  = '#%s' % settings.get('default_chat')
     self.client = SlackClient(token)
 
   def post(self,text):
-    self.client.chat_post_message(self.room, "testing, testing...",username='alex')
+    self.client.chat_post_message(self.room, text,username=self.bot)
 
 
 class SubSlackCommand(sublime_plugin.TextCommand):
   def run(self, edit):
-    chat = Slackchat()
-    chat.post("dddd")
+    for region in self.view.sel():
+      if not region.empty():
+        selection = self.view.substr(region)
+        chat = Slackchat()
+        chat.post(selection)

@@ -1,6 +1,6 @@
 [
   {
-    "keys": ["shift+command+x"],
+    "keys": ["command+k","command+s"],
     "command": "sub_slack"
   }
 ]

@@ -12,13 +12,15 @@
                 "children":
                 [
                     {
-                        "caption": "SubGrep",
+                        "caption": "SubSlack",
                         "children":
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/SubGrep.sublime-keymap"},
-                                "caption": "Key Bindings – User"
+                                "args": {
+                                    "file": "${packages}/SubSlack/SubSlack.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
                             }
                         ]
                     }
