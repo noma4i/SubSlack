@@ -1,6 +1,6 @@
 ## SublimeText Slack chat plugin
 
-SublimeText Plugin to integrate slack chat. 
+SublimeText Plugin to send selected text to Slack Chat.
 
 ### Quick Start
 - Clone/download plugin to your SublimeText User folder under SubSlack
@@ -20,6 +20,4 @@ SublimeText Plugin to integrate slack chat.
 
 ### Functions
 
-	- Lots!
-
-![grep](screenshots/showtime.gif?raw=true)
+	- Send selected text to chat room.
